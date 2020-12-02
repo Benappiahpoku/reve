@@ -128,7 +128,7 @@ a {
     height: auto;
     padding: 6rem 0;
     text-align: center;
-    color: $primary;
+    color: $dark;
     background: url(../img/main.jpg) no-repeat bottom center scroll;
     background-color: $dark;
     -webkit-background-size: cover;
@@ -189,7 +189,12 @@ a {
     }
 }
 
-.who-section {
+.service-section {
+    
+}
+
+
+.about-section {
     width: 100%;
     padding: 3rem 0;
     color: $light;
