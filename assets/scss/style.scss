@@ -162,7 +162,7 @@ a {
 }
 // Content Section
 .content-section {
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
 }
 
 // Icon blocks
@@ -196,7 +196,7 @@ a {
 
 .about-section {
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: $light;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: $dark;
@@ -224,6 +224,34 @@ a {
         }
     }
 }
+/* Portfolio */
+
+.portfolio {
+   // margin: 4rem 0;
+    // position: relative;
+}
+.portfolio h1 {
+    color: $primary;
+    margin: 2rem;
+}
+.portfolio .card {
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1.2rem;
+}
+.portfolio .card img {
+    width: 100%;
+    height: 18rem;
+}
+
+.portfolio .card-title {
+    color: $primary;
+}
+.portfolio .card-body {
+    padding: 1rem;
+}
+
+
+
 
 #contact {
     background: $dark;
