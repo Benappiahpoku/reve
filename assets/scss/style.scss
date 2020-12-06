@@ -1,3 +1,5 @@
+/* Colours */
+
 $primary: #002333;
 $dark: #333;
 $light: #f4f4f4;
@@ -6,6 +8,8 @@ $font-color: #002333;
 /* fonts */
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400&family=Ubuntu&display=swap");
+
+/* html body */
 
 html {
     width: 100%;
@@ -18,7 +22,7 @@ body {
 
     font-family: "Merriweather Sans", sans-serif;
 
-    color: $dark;
+    color: $primary;
     background-color: $light;
     overflow-x: hidden;
 }
@@ -47,6 +51,9 @@ a {
         color: darken($primary, 20%);
     }
 }
+
+/* Nagivation */
+
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -54,7 +61,6 @@ a {
     // font-family: "Open Sans", "Montserrat", "Helvetica Neue", Arial;
 
     font-family: "Merriweather Sans", sans-serif;
-    background-color: $font-color;
 }
 
 .navbar-brand {
@@ -70,6 +76,10 @@ a {
 }
 .navbar-brand:focus {
     outline: none;
+}
+
+.navbar-custom {
+    background-color:$primary;
 }
 .navbar-custom a {
     color: $light;
@@ -99,7 +109,7 @@ a {
         padding: 1.4rem 0;
         border-bottom: none;
         letter-spacing: 1px;
-        //background:transparent; 
+        //background:transparent;
         -webkit-transition: background 0.5s ease-in-out,
             padding 0.5s ease-in-out;
         -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -108,7 +118,7 @@ a {
 
     .top-nav-collapse {
         padding: 0;
-       // background-color: $dark;
+        // background-color: $dark;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -122,6 +132,9 @@ a {
     -moz-transition-property: -webkit-transform;
     -moz-transition-duration: 1s;
 }
+
+/* Home Section */
+
 .intro {
     display: table;
     width: 100%;
@@ -145,7 +158,14 @@ a {
 }
 
 .intro-text {
-    font-size: 1.1rem;
+    margin: 4rem;
+    font-size: 1.5rem;
+    color: $primary;
+}
+
+.btn-dark {
+    background-color: $primary !important; /*change the btn background color in
+                                            bootstrap */
 }
 
 @media (min-width: 767px) {
@@ -160,12 +180,15 @@ a {
         font-size: 1.7rem;
     }
 }
-// Content Section
+/* Content Section */
+
 .content-section {
-    padding: 4rem 0 2rem;
+    padding: 2rem 0 2rem;
+    color: $primary;
 }
 
-// Icon blocks
+/* Service Section  */
+
 .block-icon-left {
     overflow: auto;
     h1,
@@ -189,9 +212,39 @@ a {
     }
 }
 
-.who-section {
+.service-section {
+    // color:$primary;
+}
+/* Customer Plans */
+
+.header-primary {
+    background-color: $primary;
+    color: $light;
+    font-size: 1rem;
+}
+
+.header-css {
+    color: white;
+    border-bottom: 0;
+}
+
+.customer .card {
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1.2rem;
+}
+.customer .card-footer {
+    margin: 1.2rem;
+    font-size:1.3rem;
+    font-weight:bold;
+}
+
+
+
+/* About Section */
+
+.about-section {
     width: 100%;
-    padding: 3rem 0;
+    padding: 2rem 0;
     color: $light;
     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: $dark;
@@ -200,11 +253,17 @@ a {
     background-size: cover;
 }
 
+.btn-light {
+    color: $primary !important; // how to change a btn font color in bootstrap.
+}
+
 @media (min-width: 767px) {
     .who-section {
         padding: 6rem 0;
     }
 }
+
+/* Portfolio Section */
 
 #portfolio {
     text-align: center;
@@ -220,8 +279,34 @@ a {
     }
 }
 
+.portfolio {
+    // margin: 4rem 0;
+    // position: relative;
+}
+.portfolio h1 {
+    color: $primary;
+    margin: 2rem;
+}
+.portfolio .card {
+    box-shadow: 0 0 20px #ccc;
+    margin-top: 1.2rem;
+}
+.portfolio .card img {
+    width: 100%;
+    height: 18rem;
+}
+
+.portfolio .card-title {
+    color: $primary;
+}
+.portfolio .card-body {
+    padding: 1rem;
+}
+
+/* Contact section */
+
 #contact {
-    background: $dark;
+    background-color: $primary;
     color: $light;
     padding-bottom: 5rem;
 }
@@ -235,11 +320,17 @@ a {
         padding: 0 0.5rem 0.5rem;
         letter-spacing: 0;
     }
+    li a {
+        color: $primary;
+    }
 }
+
+/* Footer section */
 
 footer {
     margin-top: 0.75rem;
     padding-top: 2rem;
     height: 80px;
     text-align: center;
+    color: $primary;
 }
