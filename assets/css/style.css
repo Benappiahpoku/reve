@@ -1,5 +1,7 @@
+/* Colours */
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400&family=Ubuntu&display=swap");
+/* html body */
 html {
   width: 100%;
   height: 100%;
@@ -9,7 +11,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Merriweather Sans", sans-serif;
-  color: #333;
+  color: #002333;
   background-color: #f4f4f4;
   overflow-x: hidden;
 }
@@ -38,11 +40,11 @@ a:hover, a:focus {
   color: black;
 }
 
+/* Nagivation */
 .navbar {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   font-family: "Merriweather Sans", sans-serif;
-  background-color: #002333;
 }
 
 .navbar-brand {
@@ -59,6 +61,10 @@ a:hover, a:focus {
 
 .navbar-brand:focus {
   outline: none;
+}
+
+.navbar-custom {
+  background-color: #002333;
 }
 
 .navbar-custom a {
@@ -106,6 +112,7 @@ a:hover, a:focus {
   -moz-transition-duration: 1s;
 }
 
+/* Home Section */
 .intro {
   display: table;
   width: 100%;
@@ -131,7 +138,15 @@ a:hover, a:focus {
 }
 
 .intro-text {
-  font-size: 1.1rem;
+  margin: 4rem;
+  font-size: 1.5rem;
+  color: #002333;
+}
+
+.btn-dark {
+  background-color: #002333 !important;
+  /*change the btn background color in
+                                            bootstrap */
 }
 
 @media (min-width: 767px) {
@@ -147,10 +162,13 @@ a:hover, a:focus {
   }
 }
 
+/* Content Section */
 .content-section {
-  padding: 4rem 0 2rem;
+  padding: 2rem 0 2rem;
+  color: #002333;
 }
 
+/* Service Section  */
 .block-icon-left {
   overflow: auto;
 }
@@ -177,9 +195,33 @@ a:hover, a:focus {
   margin-top: 0.75rem;
 }
 
-.who-section {
+/* Customer Plans */
+.header-primary {
+  background-color: #002333;
+  color: #f4f4f4;
+  font-size: 1rem;
+}
+
+.header-css {
+  color: white;
+  border-bottom: 0;
+}
+
+.customer .card {
+  box-shadow: 0 0 20px #ccc;
+  margin-top: 1.2rem;
+}
+
+.customer .card-footer {
+  margin: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-section {
   width: 100%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   color: #f4f4f4;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: #333;
@@ -188,12 +230,17 @@ a:hover, a:focus {
   background-size: cover;
 }
 
+.btn-light {
+  color: #002333 !important;
+}
+
 @media (min-width: 767px) {
   .who-section {
     padding: 6rem 0;
   }
 }
 
+/* Portfolio Section */
 #portfolio {
   text-align: center;
   padding-bottom: 5rem;
@@ -210,8 +257,32 @@ a:hover, a:focus {
   vertical-align: middle;
 }
 
+.portfolio h1 {
+  color: #002333;
+  margin: 2rem;
+}
+
+.portfolio .card {
+  box-shadow: 0 0 20px #ccc;
+  margin-top: 1.2rem;
+}
+
+.portfolio .card img {
+  width: 100%;
+  height: 18rem;
+}
+
+.portfolio .card-title {
+  color: #002333;
+}
+
+.portfolio .card-body {
+  padding: 1rem;
+}
+
+/* Contact section */
 #contact {
-  background: #333;
+  background-color: #002333;
   color: #f4f4f4;
   padding-bottom: 5rem;
 }
@@ -228,11 +299,17 @@ a:hover, a:focus {
   letter-spacing: 0;
 }
 
+.banner-social-buttons li a {
+  color: #002333;
+}
+
+/* Footer section */
 footer {
   margin-top: 0.75rem;
   padding-top: 2rem;
   height: 80px;
   text-align: center;
+  color: #002333;
 }
 
 /*# sourceMappingURL=style.css.map */
