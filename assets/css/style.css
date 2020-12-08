@@ -11,8 +11,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Merriweather Sans", sans-serif;
-  color: #002333;
-  background-color: #f4f4f4;
+  background-color: #EDEEF2;
   overflow-x: hidden;
 }
 
@@ -68,7 +67,7 @@ a:hover, a:focus {
 }
 
 .navbar-custom a {
-  color: #f4f4f4;
+  color: #EDEEF2;
 }
 
 .navbar-custom .nav li a {
@@ -198,7 +197,7 @@ a:hover, a:focus {
 /* Customer Plans */
 .header-primary {
   background-color: #002333;
-  color: #f4f4f4;
+  color: #EDEEF2;
   font-size: 1rem;
 }
 
@@ -222,7 +221,7 @@ a:hover, a:focus {
 .about-section {
   width: 100%;
   padding: 2rem 0;
-  color: #f4f4f4;
+  color: #EDEEF2;
   background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
   background-color: #333;
   -webkit-background-size: cover;
@@ -269,7 +268,7 @@ a:hover, a:focus {
 
 .portfolio .card img {
   width: 100%;
-  height: 18rem;
+  height: 14rem;
 }
 
 .portfolio .card-title {
@@ -283,7 +282,7 @@ a:hover, a:focus {
 /* Contact section */
 #contact {
   background-color: #002333;
-  color: #f4f4f4;
+  color: #EDEEF2;
   padding-bottom: 5rem;
 }
 
